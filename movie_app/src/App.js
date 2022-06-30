@@ -40,13 +40,14 @@ class App extends React.Component {
                     title={movie.title}
                     summary={movie.summary}
                     poster={movie.medium_cover_image}
+                    genres={movie.genres}
                     />
-                ))}; //컴포넌트 출력
+                ))}; 
             </div>
         )}
         </section>
         );
-    }
+    }//컴포넌트 출력
 }
 
 export default App;
