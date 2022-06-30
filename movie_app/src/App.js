@@ -8,7 +8,12 @@ class App extends React.Component {
     };
     // api 실행 분리
     getMovies = async () => { // 키워드 asyns 함수실행시 시간 소요(비동기) / await 실제 시간 필요 대상
-        const movies = await axios.get('https://yts-proxy.now.sh/list_movies.json');
+        const { //구조 분해 할당으로 키에 접근
+            data:{
+                data:{ movies },
+            },
+        } = await axios.get('https://yts-proxy.now.sh/list_movies.json');
+        this.setState({ movies, isLoading: false }); // axios get : state 이름 같아서 축약
     }
 
     componentDidMount(){ //영화 데이터 로딩
