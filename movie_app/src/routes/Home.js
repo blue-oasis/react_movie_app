@@ -42,7 +42,7 @@ class Home extends React.Component {
                     poster={movie.medium_cover_image}
                     genres={movie.genres}
                     />
-                ))}; 
+                ))} 
             </div>
         )}
         </section>
@@ -50,4 +50,4 @@ class Home extends React.Component {
     }//컴포넌트 출력
 }
 
-export default Home
+export default Home;
