@@ -1,0 +1,33 @@
+.data {
+    padding-left: 100px;
+    padding-top: 0px;
+    color: rgb(100, 102, 104);
+
+}
+
+.title {
+    color: black;
+    font-size: 30px;
+}
+
+.year {
+    font-size: medium;
+}
+
+.summary {
+    font-size: large;
+}
+
+.img_d {
+margin: 100px;
+margin-bottom: 10px;
+}
+
+.g {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px;
+}

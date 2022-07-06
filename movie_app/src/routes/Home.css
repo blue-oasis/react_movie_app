@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     font-weight: 300;
+    font-size: x-large;
+    padding: 100px;
+    font-style: italic;
 }
 
 .movies {

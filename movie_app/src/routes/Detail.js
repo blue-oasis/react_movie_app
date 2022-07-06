@@ -1,4 +1,5 @@
 import React from "react";
+import './Detail.css'; 
 
 class Detail extends React.Component {
     componentDidMount() {
@@ -17,11 +18,16 @@ class Detail extends React.Component {
                  
             <div>
 
-            <img src={location.state.poster} alt={location.state.title} title={location.state.title} />
-            <div className="movie__data">
-            <h3 className="movie__title">{location.state.title}</h3>
-            <h5 className="movie__year">{location.state.year}</h5>
-            <p className="movie__summary">{location.state.summary}</p>
+            <img className="img_d" src={location.state.poster} alt={location.state.title} title={location.state.title} />
+            <div className="data">
+            <h3 className="title">{location.state.title}</h3>
+            <h5 className="year">{location.state.year}</h5>
+            <h5 className="g">
+            {location.state.genres.map((genre, index) => {
+                return <li key={index} className="movie__genre">  &nbsp; {genre} </li>
+            })}
+            </h5>
+            <p className="summary">{location.state.summary}</p>
             </div>
 
             </div>
